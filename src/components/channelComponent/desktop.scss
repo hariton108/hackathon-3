@@ -1,0 +1,266 @@
+& {
+	background: url('../images/channelImages/bg_tl.jpg') no-repeat center top;
+	background-size: cover;
+	font-family: Montserrat;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		height: px(87);
+		padding-top: px(28);
+		padding-right: px(35);
+		padding-bottom: px(28);
+		padding-left: px(35);
+		box-sizing: border-box;
+		background: #f96331;
+
+		.logo {
+			position: absolute;
+			top: px(28);
+			left: 50%;
+			width: px(31);
+			height: auto;
+			margin-left: px(-15);
+
+			img {
+				width: inherit;
+			}
+		}
+
+		.nav-bar-left {
+			display: flex;
+
+			a {
+				display: block;
+				height: px(31);
+
+				img {
+					height: inherit;
+				}
+			}
+
+			.channels {
+				margin-top: px(8);
+				margin-left: px(70);
+				color: #fff;
+					font-size: px(15);
+					font-weight: 700;
+					text-decoration: none;
+				
+				
+			}
+		}
+
+		.nav-bar-right {
+			display: flex;
+
+			a {
+				display: block;
+				height: px(31);
+				margin-left: px(45);
+
+				img {
+					height: inherit;
+				}
+			}
+		}
+	}
+
+	header {
+		padding-top: px(190);
+		padding-bottom: px(55);
+
+		h1 {
+			margin-bottom: px(50);
+			color: #fff;
+			font-size: px(68);
+			font-weight: 700;
+			text-align: center;
+		}
+
+		button {
+			display: block;
+			width: px(147);
+			height: px(52);
+			margin: 0 auto px(142) auto;
+			border: 0;
+			background: #fff;
+			border-radius: px(26);
+			color: rgba(235, 83, 34, .5);
+			font-size: px(22);
+			font-weight: 700;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		p {
+			margin-bottom: px(34);
+			font-size: px(18);
+			font-weight: 700;
+			color: #fff;
+			text-align: center;
+		}
+
+		.followers {
+			display: flex;
+			justify-content: center;
+
+			a {
+				display: block;
+				width: px(45);
+				height: px(45);
+				margin-left: px(24);
+
+				&::last-child {
+					margin-left: 0;
+				}
+
+				img {
+					height: inherit;
+				}
+			}
+
+		}
+	}
+
+	.channels {
+		display: flex;
+		flex-wrap: wrap;
+
+		.channels-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+			width: 25%;
+			height: px(400);		
+			padding: px(95) 0 px(40) 0;
+			background: #fff;
+
+			&::before {
+				display: block;
+				position: absolute;
+				left: 50%;
+				width: 0;
+				height: 0;
+				border-right: px(18) solid transparent;
+				border-left: px(18) solid transparent;
+				content: '';
+				z-index: 1	;
+				margin-left: px(-18);
+			}
+
+			&::after {
+				display: block;
+				width: 100%;
+				height: 100%;
+				content: '';
+				position: absolute;
+				left: 0;
+			}
+
+			&:nth-child(odd) {
+				margin-bottom: px(400);
+			}
+
+			&:nth-child(even) {
+				margin-top: px(400);
+			}
+
+			&:nth-child(odd)::before {
+				top: 100%;
+				border-top: px(18) solid #fff;
+			}
+
+			&:nth-child(odd)::after {
+				top: 100%;
+			}
+
+			&:nth-child(even)::before {
+				top: px(-18);
+				border-bottom: px(18) solid #fff;
+			}
+
+			&:nth-child(even)::after {
+				top: -100%;			
+			}
+
+			&:nth-child(1)::after {
+				background: url('../images/channelImages/pic_1.jpg') left top no-repeat;
+				background-size: cover;
+			}
+
+			&:nth-child(2)::after {
+				background: url('../images/channelImages/pic_2.jpg') left top no-repeat;
+				background-size: cover;
+			}
+
+			&:nth-child(3)::after {
+				background: url('../images/channelImages/pic_3.jpg') left top no-repeat;
+				background-size: cover;
+			}
+
+			&:nth-child(4)::after {
+				background: url('../images/channelImages/pic_4.jpg') left top no-repeat;
+				background-size: cover;
+			}
+
+			h2 {
+				margin: 0 px(75);
+				font-size: px(35);
+				font-weight: 700;
+				line-height: px(50);
+				text-align: center;
+			}
+
+			.channel-info {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 px(50);
+				font-size: px(15);
+				line-height: px(22);
+
+				.source {
+					position: relative;
+					height: px(22);
+					padding-left: px(30);
+
+					&::before {
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: '';
+						background: url('../images/channelImages/icon_source.png') no-repeat;
+						background-size: contain;
+						width: px(22);
+						height: px(22);
+						opacity: .3;
+					}
+				}
+
+				.date {
+					position: relative;
+					height: px(22);
+					padding-left: px(30);
+
+					&::before {
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: '';
+						background: url('../images/channelImages/icon_time.png') no-repeat;
+						background-size: contain;
+						width: px(22);
+						height: px(22);
+						opacity: .3;
+					} 
+				}
+			}
+		}
+	}
+}

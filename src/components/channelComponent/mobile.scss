@@ -1,0 +1,178 @@
+& {
+	background: url('../images/channelImages/bg_tl.jpg') no-repeat center px(50);
+	background-size: contain;
+	font-family: Montserrat;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		height: px(110);
+		padding-top: px(55);
+		padding-right: px(25);
+		padding-bottom: px(20);
+		padding-left: px(25);
+		box-sizing: border-box;
+		background: #f96331;
+
+		.logo {
+			position: absolute;
+			top: px(55);
+			left: 50%;
+			width: px(37);
+			height: auto;
+			margin-left: px(-19);
+
+			img {
+				width: inherit;
+			}
+		}
+
+		.nav-bar-left {
+
+			a {
+				display: block;
+				height: px(35);
+
+				img {
+					height: inherit;
+				}
+			}
+
+			.channels {
+				display: none;
+			}
+		}
+
+		.nav-bar-right {
+
+			a {
+				display: block;
+				height: px(35);
+
+				img {
+					height: inherit;
+				}
+			}
+
+			.search {
+				display: none;
+			}
+
+			.login {
+				display: none;
+			}
+
+			.bookmark {
+				display: none;
+			}
+		}
+	}
+	
+	header {
+		padding-top: px(70);
+		padding-bottom: px(76);
+
+		h1 {
+			margin-bottom: px(50);
+			color: #fff;
+			font-size: px(40);
+			font-weight: 700;
+			text-align: center;
+		}
+
+		button {
+			display: block;
+			width: px(170);
+			height: px(60);
+			margin: 0 auto px(47) auto;
+			border: 0;
+			background: #fff;
+			border-radius: px(30);
+			color: #f96332;
+			font-size: px(22);
+			font-weight: 700;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		p {
+			font-size: px(18);
+			font-weight: 700;
+			color: #fff;
+			text-align: center;
+		}
+
+		.followers {
+			display: none;
+		}
+	}
+
+	.channels {
+		
+		.channels-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			position: relative;
+			height: px(220);		
+			padding: px(40) px(35);
+			border: px(1) solid rgba(0, 0, 0, .05);
+			background: #fff;
+			box-sizing: border-box;
+
+			h2 {
+				font-size: px(36);
+				font-weight: 700;
+				line-height: px(50);
+			}
+
+			.channel-info {
+				display: flex;
+				font-size: px(17);
+				line-height: px(26);
+
+				.source {
+					position: relative;
+					height: px(26);
+					margin-right: px(36);
+					padding-left: px(34);
+
+					&::before {
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: '';
+						background: url('../images/channelImages/icon_source.png') no-repeat;
+						background-size: contain;
+						width: px(26);
+						height: px(26);
+						opacity: .3;
+					}
+				}
+
+				.date {
+					position: relative;
+					height: px(26);
+					padding-left: px(34);
+
+					&::before {
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: '';
+						background: url('../images/channelImages/icon_time.png') no-repeat;
+						background-size: contain;
+						width: px(26);
+						height: px(26);
+						opacity: .3;
+					} 
+				}
+			}
+		}
+	}
+}
